@@ -1,32 +1,30 @@
 import React from "react";
 import Image from "next/image";
 import Jadoo from "@/assets/Hero/jadoo.svg";
-import { PaddingContainer, Text } from "@/components/Common"
+import { Text, Dropdown } from "@/components/Common";
 
 export default function Navbar() {
     return (
-        <div className="fixed">
-            <PaddingContainer>
-                <div className="flex w-[1160px] mt-[47px] text-center justify-between items-center">
-                    <Image src={Jadoo} alt="logo" />
-                    <div className="flex text-[#212832] font-[400] items-center justify-center text-center">
-                        <Text size="p" className="pl-[86px]">Desitnations</Text>
-                        <Text size="p" className="pl-[86px]">Hotels</Text>
-                        <Text size="p" className="pl-[86px]">Flights</Text>
-                        <Text size="p" className="pl-[86px]">Bookings</Text>
-                        <Text size="p" className="pl-[86px]">Login</Text>
-                        <div className="pl-[52px]">
-                            <Text 
-                                size="p" 
-                                className="border border-[#212832] rounded-lg px-5 py-2"
-                            >
-                                Sign up
-                            </Text>
-                        </div>
-                        <Text size="p" className="pl-[42px]">EN</Text>
+        <div className="relative top-0 left-0 right-0">
+            <div className="flex w-[1160px] mt-[47px] text-center justify-between items-center">
+                <Image src={Jadoo} alt="logo" />
+                <div className="flex text-[#212832] gap-12 text-bold font-[400] items-center justify-center text-center">
+                    <Text size="p" className=" cursor-pointer">Desitnations</Text>
+                    <Text size="p" className=" cursor-pointer">Hotels</Text>
+                    <Text size="p" className=" cursor-pointer">Flights</Text>
+                    <Text size="p" className=" cursor-pointer">Bookings</Text>
+                    <Text size="p" className=" cursor-pointer">Login</Text>
+                    <div className="">
+                        <Text
+                            size="p"
+                            className="border border-[#212832] rounded-[5px] px-5 py-2 cursor-pointer"
+                        >
+                            Sign up
+                        </Text>
                     </div>
+                    <Dropdown />
                 </div>
-            </PaddingContainer>
+            </div>
         </div>
     )
 }

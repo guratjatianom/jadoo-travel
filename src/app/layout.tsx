@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { volkhov, poppins } from "./fonts/fonts";
 import "./globals.css";
+import { PaddingContainer } from "@/components/Common";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${volkhov.variable} ${poppins.variable} antialiased`}
       >
-        {children}
+        <PaddingContainer>{children}</PaddingContainer>
       </body>
     </html>
   );
