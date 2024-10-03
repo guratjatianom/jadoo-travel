@@ -5,7 +5,7 @@ import { Text, Dropdown } from "@/components/Common";
 
 export default function Navbar() {
     return (
-        <div className="relative top-0 left-0 right-0">
+        <div className="relative top-0 left-0 right-0 z-20">
             <div className="flex w-[1160px] mt-[47px] text-center justify-between items-center">
                 <Image src={Jadoo} alt="logo" />
                 <div className="flex text-[#212832] gap-12 text-bold font-[400] items-center justify-center text-center">
