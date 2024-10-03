@@ -7,7 +7,7 @@ import Deco from "@/assets/Hero/Deco.png";
 import Traveller from "@/assets/Hero/Traveller.png";
 import Plane from "@/assets/Hero/plane.png";
 import Navbar from "@/components/Common/Navbar/Navbar";
-import { PlaneAnimation } from "./Hero.styled";
+import { PlaneAnimation, TravellerAnimation } from "./Hero.styled";
 import { Text } from "@/components/Common";
 
 export default function Hero() {
@@ -43,7 +43,9 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <Image src={Traveller} alt="traveller" className="z-30 absolute left-[420px] top-[25px]" />
+            <TravellerAnimation className="z-30 absolute left-[420px] top-[25px]">
+                <Image src={Traveller} alt="traveller" />
+            </TravellerAnimation>
             <PlaneAnimation className="z-20 absolute top-[100px] left-[500px]">
                 <Image src={Plane} alt="plane" />
             </PlaneAnimation>
