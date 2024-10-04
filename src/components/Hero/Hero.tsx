@@ -22,8 +22,8 @@ export default function Hero() {
                         <Text size="h5" className="text-[#DF6951] pb-[24px]">BEST DESTINATIONS AROUND THE WORLD</Text>
                     </div>
                     <div className="relative">
-                        <Text size="h1" className="text-[#181E4B] pb-[30px] relative z-10">Travel, enjoy and live a new and full life</Text>
-                        <div className="absolute w-[385px] h-[12px] top-[75px] left-[235px] z-0">
+                        <Text size="h1" fontFamily="volkhov" className="text-[#181E4B] pb-[30px] relative z-10">Travel, enjoy and live a new and full life</Text>
+                        <div className="absolute w-[385px] h-[12px] top-[75px] left-[275px] z-0">
                             <Image src={Decore} alt="decore" />
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <TravellerAnimation className="z-30 absolute left-[420px] top-[25px]">
+            <TravellerAnimation className="z-30 absolute left-[500px] top-[65px]">
                 <Image src={Traveller} alt="traveller" />
             </TravellerAnimation>
             <PlaneAnimation className="z-20 absolute top-[100px] left-[500px]">

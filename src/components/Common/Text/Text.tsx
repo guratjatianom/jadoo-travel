@@ -18,7 +18,7 @@ const Text: React.FC<TextProps> = ({
     const sizeClasses = {
         h1: 'text-[84px] leading-[89px] font-bold',
         h2: 'text-[50px] leading-[64px]',
-        h3: 'text-[44px] leading-[60px]',
+        h3: 'text-[44px] leading-[66px]',
         h4: 'text-[33px] leading-[54px]',
         h5: 'text-[20px] leading-[30px]',
         h6: 'text-[18px]',

@@ -10,7 +10,7 @@ export const movePlane = keyframes`
 `;
 
 export const PlaneAnimation = styled.div`
-  animation: ${movePlane} 4s ease-in-out forwards;
+  animation: ${movePlane} 3s ease-in-out forwards;
   animation-fill-mode: forwards;
 `;
 
