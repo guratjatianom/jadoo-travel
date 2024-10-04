@@ -15,7 +15,9 @@ export default function Destinations() {
                 <Text size="h2" fontFamily="volkhov" className="text-[#14183E] pb-[60px]">Top Destinations</Text>
             </div>
             <div className="flex items-center justify-center gap-9">
-                <div>
+                
+                {/* Rome Destination */}
+                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
                     <Image src={Rome} alt="rome" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -30,7 +32,9 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
-                <div>
+                
+                {/* London Destination */}
+                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
                     <Image src={London} alt="london" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -45,7 +49,9 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
-                <div>
+                
+                {/* Europe Destination */}
+                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
                     <Image src={Eropa} alt="eropa" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -60,6 +66,7 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
+                
                 {/* <Image src={Dec} alt="decore" /> */}
             </div>
         </div>
