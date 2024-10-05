@@ -3,6 +3,7 @@ import Hero from "@/components/Hero/Hero"
 import Services from "@/components/Services/Services";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import Footer from "@/components/Footer/Footer";
+import Logos from "@/components/Logos/Logos";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Destinations />
+      <Logos/>
       <Subscribe/>
       <Footer />
     </main>
