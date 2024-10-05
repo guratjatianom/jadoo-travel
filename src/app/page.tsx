@@ -1,6 +1,7 @@
 import Destinations from "@/components/Destinations/Destinations";
 import Hero from "@/components/Hero/Hero"
 import Services from "@/components/Services/Services";
+import Subscribe from "@/components/Subscribe/Subscribe";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Destinations />
+      <Subscribe/>
       <Footer />
     </main>
   );
