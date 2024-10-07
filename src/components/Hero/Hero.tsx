@@ -23,7 +23,7 @@ export default function Hero() {
                     </div>
                     <div className="relative">
                         <Text size="h1" fontFamily="volkhov" className="text-[#181E4B] pb-[30px] relative z-10">Travel, enjoy and live a new and full life</Text>
-                        <div className="absolute w-[385px] h-[12px] top-[75px] left-[275px] z-0">
+                        <div className="absolute w-[385px] h-[12px] top-[70px] left-[275px] z-0">
                             <Image src={Decore} alt="decore" />
                         </div>
                     </div>

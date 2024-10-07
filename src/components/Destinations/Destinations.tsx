@@ -5,19 +5,17 @@ import Rome from "@/assets/Destinations/rome.png";
 import London from "@/assets/Destinations/london.png";
 import Eropa from "@/assets/Destinations/eropa.png";
 import Cursor from "@/assets/Destinations/cursor.svg";
-// import Dec from "@/assets/Destinations/dec.png";
+import Dec from "@/assets/Destinations/dec.png";
 
 export default function Destinations() {
     return (
-        <div className="relative w-[1102px] h-[617px] mt-[123px]">
+        <div className="relative w-[1140px] h-[617px] mt-[123px]">
             <div className="text-center">
                 <Text size="h6" className="leading-[27px] text-[#5E6282] pb-[8px]">Top Selling</Text>
                 <Text size="h2" fontFamily="volkhov" className="text-[#14183E] pb-[60px]">Top Destinations</Text>
             </div>
-            <div className="flex items-center justify-center gap-9">
-                
-                {/* Rome Destination */}
-                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
+            <div className="relative flex items-center justify-center gap-9 z-10">
+                <div className="shadow-lg rounded-lg">
                     <Image src={Rome} alt="rome" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -32,9 +30,7 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
-                
-                {/* London Destination */}
-                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
+                <div className="shadow-lg rounded-lg">
                     <Image src={London} alt="london" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -49,9 +45,7 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
-                
-                {/* Europe Destination */}
-                <div className="shadow-lg rounded-lg"> {/* Added shadow class */}
+                <div className="shadow-lg rounded-lg">
                     <Image src={Eropa} alt="eropa" width={314} height={457} />
                     <div className="w-[314px] h-[130px]">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
@@ -66,9 +60,10 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
-                
-                {/* <Image src={Dec} alt="decore" /> */}
             </div>
+                <div className="absolute top-[230px] bottom-[-50px] right-[-0px] z-0">
+                    <Image src={Dec} alt="decore" />
+                </div>
         </div>
     )
 }

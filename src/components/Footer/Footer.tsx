@@ -63,7 +63,7 @@ export default function Footer() {
                 </div>
             </div>
             <div>
-                <Text className="text-[#5E6282] text-center pt-[84px]">All rights reserved@jadoo.co</Text>
+                <Text className="text-[#5E6282] text-center pt-[84px] mb-[79px]">All rights reserved@jadoo.co</Text>
             </div>
         </div>
     )

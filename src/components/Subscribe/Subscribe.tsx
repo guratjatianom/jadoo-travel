@@ -3,11 +3,15 @@ import { Text } from "@/components/Common";
 import Bg from "@/assets/Subscribe/bg.png";
 import Email from "@/assets/Subscribe/email.svg";
 import Bintang from "@/assets/Subscribe/bintang.svg";
+import Send from "@/assets/Subscribe/send.svg";
 import Image from "next/image";
 
 export default function Subscribe() {
   return (
     <div className='relative w-[1100px] h-[490px] mt-[90px] mb-[96px] flex items-center justify-center'>
+      <div className='absolute top-[-25px] right-[-25px] z-10'>
+        <Image src={Send} alt="send" />
+      </div>
       <Image src={Bg} alt="bg" className='absolute inset-0 w-full h-full object-cover z-0' />
       <div className='relative z-10 flex flex-col items-center text-center'>
         <div className='w-[881px] h-[108px]'>
