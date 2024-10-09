@@ -4,10 +4,17 @@ export const CategoryContainer = styled.div`
   display: flex;
   margin-top: 108px;
   gap: 150px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    align-items: center; /* Untuk memastikan elemen tetap berada di tengah pada mobile */
+  }
 `;
 
 interface CategoryItemProps {
-  $isActive: boolean; // Ganti isActive dengan $isActive
+  $isActive: boolean;
 }
 
 export const CategoryItem = styled.div<CategoryItemProps>`
@@ -20,9 +27,9 @@ export const CategoryItem = styled.div<CategoryItemProps>`
   box-shadow: ${(props) => (props.$isActive ? "0px 4px 20px rgba(0, 0, 0, 0.1)" : "none")};
   transition: all 0.3s ease;
   text-align: center;
-  display: flex;         
+  display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 
   &:hover {
@@ -30,13 +37,25 @@ export const CategoryItem = styled.div<CategoryItemProps>`
     border: 1px solid #62BAFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
 `;
 
 export const CategoryIcon = styled.div`
   width: 60px;
   height: 60px;
   margin-bottom: 15px;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
 `;

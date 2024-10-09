@@ -9,17 +9,17 @@ import Dec from "@/assets/Destinations/dec.png";
 
 export default function Destinations() {
     return (
-        <div className="relative w-[1140px] h-[617px] mt-[123px]">
+        <div className="relative w-full max-w-[1140px] h-auto md:h-[617px] mt-[60px] md:mt-[123px] mx-auto px-4 md:px-0">
             <div className="text-center">
                 <Text size="h6" className="leading-[27px] text-[#5E6282] pb-[8px]">Top Selling</Text>
-                <Text size="h2" fontFamily="volkhov" className="text-[#14183E] pb-[60px]">Top Destinations</Text>
+                <Text size="h2" fontFamily="volkhov" className="text-[#14183E] pb-[30px] md:pb-[60px]">Top Destinations</Text>
             </div>
-            <div className="relative flex items-center justify-center gap-9 z-10">
+            <div className="relative flex flex-col md:flex-row items-center justify-center gap-9 z-10">
                 <div className="shadow-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <Image src={Rome} alt="rome" width={314} height={457} />
-                    <div className="w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
+                    <Image src={Rome} alt="rome" width={314} height={457} className="w-full md:w-[314px]" />
+                    <div className="w-full md:w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
-                            <Text size="h6" className="leading-[22.41px] text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">Rome, Italty</Text>
+                            <Text size="h6" className="leading-[22.41px] text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">Rome, Italy</Text>
                             <Text size="h6" className="text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">$5.42k</Text>
                         </div>
                         <div className="flex items-center pl-[20px]">
@@ -30,9 +30,10 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
+
                 <div className="shadow-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <Image src={London} alt="london" width={314} height={457} />
-                    <div className="w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
+                    <Image src={London} alt="london" width={314} height={457} className="w-full md:w-[314px]" />
+                    <div className="w-full md:w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
                             <Text size="h6" className="leading-[22.41px] text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">London, UK</Text>
                             <Text size="h6" className="text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">$4.2k</Text>
@@ -45,9 +46,10 @@ export default function Destinations() {
                         </div>
                     </div>
                 </div>
+
                 <div className="shadow-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <Image src={Eropa} alt="eropa" width={314} height={457} />
-                    <div className="w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
+                    <Image src={Eropa} alt="eropa" width={314} height={457} className="w-full md:w-[314px]" />
+                    <div className="w-full md:w-[314px] h-[130px] bg-white hover:bg-gray-100 transition-colors duration-300">
                         <div className="flex justify-between px-[20px] pt-[27px] pb-[19px]">
                             <Text size="h6" className="leading-[22.41px] text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">Full Europe</Text>
                             <Text size="h6" className="text-[#5E6282] hover:text-[#14183E] transition-colors duration-300">$15k</Text>
@@ -61,7 +63,7 @@ export default function Destinations() {
                     </div>
                 </div>
             </div>
-            <div className="absolute top-[230px] bottom-[-50px] right-[-0px] z-0">
+            <div className="absolute top-[230px] bottom-[-50px] right-[-0px] z-0 hidden md:block">
                 <Image src={Dec} alt="decore" />
             </div>
         </div>

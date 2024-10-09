@@ -39,7 +39,7 @@ export default function Hero() {
                         <div className="flex items-center justify-center rounded-full border bg-[#DF6951] h-[52px] w-[52px]">
                             <Image src={Play} alt="play" className="h-[15px] w-[15px]" />
                         </div>
-                        <Text className="text-[#686D77]">Play Demo</Text>
+                        <Text className="text-[#686D77] cursor-pointer">Play Demo</Text>
                     </div>
                 </div>
             </div>

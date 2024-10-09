@@ -22,8 +22,8 @@ export default function Services() {
   const [activeCategory, setActiveCategory] = useState<number | null>(null);
 
   return (
-    <div className="relative w-[1140px] h-[525px] mt-[97px]">
-      <div className="absolute top-[20px] right-[-45px] z-10">
+    <div className="relative w-[90%] max-w-[1140px] h-auto mt-[97px] mx-auto lg:h-[525px]"> {/* Mengubah width untuk mobile */}
+      <div className="absolute top-[20px] right-[-45px] z-10 hidden lg:block">
         <Image src={Bintang} alt="bintang" className="w-[150px] h-[150px]" />
       </div>
       <div className="text-center">
@@ -31,22 +31,23 @@ export default function Services() {
         <Text size="h2" fontFamily="volkhov" className="text-[#14183E]">We Offer Best Services</Text>
       </div>
 
-      <CategoryContainer>
+      <CategoryContainer className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"> {/* Responsive grid */}
         {categories.map((category, index) => (
           <CategoryItem
             key={index}
-            $isActive={activeCategory === index} // Ganti isActive menjadi $isActive
+            $isActive={activeCategory === index}
             onMouseEnter={() => setActiveCategory(index)}
             onMouseLeave={() => setActiveCategory(null)}
+            className="p-4 sm:p-6 lg:p-8"  // Padding disesuaikan
           >
             <div className="relative flex justify-center items-center">
               <div className="absolute z-0">
-                <Image src={Rectangle} alt="rectangle" className="w-[100px] h-[100px]" />
+                <Image src={Rectangle} alt="rectangle" className="w-[80px] h-[80px] lg:w-[100px] lg:h-[100px]" />
               </div>
               <div className={`absolute z-10 transition-opacity duration-300 ${activeCategory === index ? 'opacity-100' : 'opacity-0'}`}>
-                <Image src={Rectanglered} alt="rectangle red" className="w-[100px] h-[100px]" />
+                <Image src={Rectanglered} alt="rectangle red" className="w-[80px] h-[80px] lg:w-[100px] lg:h-[100px]" />
               </div>
-              <CategoryIcon className="relative z-20">
+              <CategoryIcon className="relative z-20 w-[50px] h-[50px] lg:w-auto lg:h-auto">
                 <Image src={category.icon} alt={category.title} />
               </CategoryIcon>
             </div>

@@ -8,22 +8,22 @@ import Qantas from "@/assets/Logos/qantas.jpg";
 
 export default function Logos() {
     return (
-        <div className='w-full md:w-[1073px] h-auto mt-[40px] md:mt-[96px]'>
+        <div className='w-full md:w-[1073px] h-auto mt-[300px] md:mt-[96px]'>
             <div className="flex flex-wrap gap-[20px] md:gap-[50px] items-center justify-center">
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
-                    <Image src={Axon} alt="axon" width={100} height={60} className="md:w-[140px] md:h-[80px]" />
+                    <Image src={Axon} alt="axon" width={100} height={60} className="md:w-[140px] md:h-[60px]" />
                 </div>
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
-                    <Image src={Jetstar} alt="jetstar" width={100} height={60} className="md:w-[140px] md:h-[80px]" />
+                    <Image src={Jetstar} alt="jetstar" width={100} height={60} className="md:w-[140px] md:h-[60px]" />
                 </div>
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
-                    <Image src={Expedia} alt="expedia" width={100} height={60} className="md:w-[140px] md:h-[80px]" />
+                    <Image src={Expedia} alt="expedia" width={100} height={60} className="md:w-[140px] md:h-[60px]" />
                 </div>
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
-                    <Image src={Qantas} alt="qantas" width={100} height={60} className="md:w-[140px] md:h-[80px]" />
+                    <Image src={Qantas} alt="qantas" width={100} height={60} className="md:w-[140px] md:h-[60px]" />
                 </div>
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
-                    <Image src={Litalia} alt="litalia" width={100} height={60} className="md:w-[140px] md:h-[80px]" />
+                    <Image src={Litalia} alt="litalia" width={100} height={60} className="md:w-[140px] md:h-[60px]" />
                 </div>
             </div>
         </div>
