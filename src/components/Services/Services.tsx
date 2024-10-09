@@ -8,8 +8,8 @@ import Satelit from "@/assets/Services/satelit.svg";
 import Settings from "@/assets/Services/settings.svg";
 import Plane from "@/assets/Hero/plane.png";
 import Bintang from "@/assets/Services/bintang.svg";
-// import Rectangle from "@/assets/Services/rectangle.svg";
-// import Rectanglered from "@/assets/Services/rectanglered.svg";
+import Rectangle from "@/assets/Services/rectangle.svg";
+import Rectanglered from "@/assets/Services/rectanglered.svg";
 
 export default function Services() {
   const categories = [
@@ -35,13 +35,21 @@ export default function Services() {
         {categories.map((category, index) => (
           <CategoryItem
             key={index}
-            isActive={activeCategory === index}
+            $isActive={activeCategory === index} // Ganti isActive menjadi $isActive
             onMouseEnter={() => setActiveCategory(index)}
             onMouseLeave={() => setActiveCategory(null)}
           >
-            <CategoryIcon>
-              <Image src={category.icon} alt={category.title} />
-            </CategoryIcon>
+            <div className="relative flex justify-center items-center">
+              <div className="absolute z-0">
+                <Image src={Rectangle} alt="rectangle" className="w-[100px] h-[100px]" />
+              </div>
+              <div className={`absolute z-10 transition-opacity duration-300 ${activeCategory === index ? 'opacity-100' : 'opacity-0'}`}>
+                <Image src={Rectanglered} alt="rectangle red" className="w-[100px] h-[100px]" />
+              </div>
+              <CategoryIcon className="relative z-20">
+                <Image src={category.icon} alt={category.title} />
+              </CategoryIcon>
+            </div>
             <Text size="h6" className="text-[#14183E] mb-[10px]">{category.title}</Text>
             <Text size="p" className="text-[#5E6282]">{category.description}</Text>
           </CategoryItem>

@@ -7,7 +7,7 @@ export const CategoryContainer = styled.div`
 `;
 
 interface CategoryItemProps {
-  isActive: boolean;
+  $isActive: boolean; // Ganti isActive dengan $isActive
 }
 
 export const CategoryItem = styled.div<CategoryItemProps>`
@@ -15,9 +15,9 @@ export const CategoryItem = styled.div<CategoryItemProps>`
   height: 270px;
   padding: 20px;
   border-radius: 18px;
-  background-color: ${(props) => (props.isActive ? "#F8F9FC" : "white")};
-  border: ${(props) => (props.isActive ? "1px solid #62BAFF" : "1px solid transparent")};
-  box-shadow: ${(props) => (props.isActive ? "0px 4px 20px rgba(0, 0, 0, 0.1)" : "none")};
+  background-color: ${(props) => (props.$isActive ? "#F8F9FC" : "white")};
+  border: ${(props) => (props.$isActive ? "1px solid #62BAFF" : "1px solid transparent")};
+  box-shadow: ${(props) => (props.$isActive ? "0px 4px 20px rgba(0, 0, 0, 0.1)" : "none")};
   transition: all 0.3s ease;
   text-align: center;
   display: flex;         
@@ -40,4 +40,3 @@ export const CategoryIcon = styled.div`
   align-items: center;
   justify-content: center;
 `;
-

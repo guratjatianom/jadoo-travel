@@ -9,16 +9,16 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <div className="relative w-[1150px]">
-            <div className="flex text-center justify-center items-center">
-                <div className="w-[207px] h-[133px] pr-[83px]">
+        <div className="relative w-full md:w-[1150px] px-4 md:px-0">
+            <div className="flex flex-col md:flex-row text-center md:text-left justify-center items-center md:items-start">
+                <div className="w-full md:w-[207px] h-auto md:h-[133px] mb-6 md:mb-0 md:pr-[83px]">
                     <Text size="h3" className="text-[#181E4B]">Jadoo.</Text>
-                    <Text className="text-[13px] text-[#5E6282] leading-[16.19px]">Book your trip in minute, get full
-                        Control for much longer.
+                    <Text className="text-[13px] text-[#5E6282] leading-[16.19px]">
+                        Book your trip in minutes, get full control for much longer.
                     </Text>
                 </div>
-                <div className="flex w-[474px] h-auto">
-                    <div className="text-left pr-[72px]">
+                <div className="flex flex-col md:flex-row w-full md:w-[474px] h-auto mb-6 md:mb-0 text-center md:text-left items-center md:items-start">
+                    <div className="text-center md:text-left mb-4 md:mb-0 md:pr-[72px]">
                         <Text className="text-[21px] leading-[26.15px] pb-[34px]">Company</Text>
                         <div className="text-[#5E6282]">
                             <Text>About</Text>
@@ -26,25 +26,25 @@ export default function Footer() {
                             <Text>Mobile</Text>
                         </div>
                     </div>
-                    <div className="text-left pr-[72px]">
+                    <div className="text-center md:text-left mb-4 md:mb-0 md:pr-[72px]">
                         <Text className="text-[21px] leading-[26.15px] pb-[34px]">Contact</Text>
                         <div className="text-[#5E6282]">
                             <Text>Help/FAQ</Text>
                             <Text>Press</Text>
-                            <Text>Affilates</Text>
+                            <Text>Affiliates</Text>
                         </div>
                     </div>
-                    <div className="text-left pr-[72px]">
+                    <div className="text-center md:text-left md:pr-[72px]">
                         <Text className="text-[21px] leading-[26.15px] pb-[34px]">More</Text>
                         <div className="text-[#5E6282]">
-                            <Text>Airlinefees</Text>
+                            <Text>Airline fees</Text>
                             <Text>Airline</Text>
                             <Text>Low fare tips</Text>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-[214px] h-[147px]">
-                    <div className="flex gap-[25px]">
+                <div className="flex flex-col items-center md:items-start w-full md:w-[214px] h-auto md:h-[147px]">
+                    <div className="flex gap-[25px] mb-4">
                         <div className="flex items-center justify-center shadow-lg rounded-full w-[44px] h-[44px]">
                             <Image src={Facebook} alt="Facebook" />
                         </div>
@@ -62,8 +62,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div>
-                <Text className="text-[#5E6282] text-center pt-[84px] mb-[79px]">All rights reserved@jadoo.co</Text>
+            <div className="text-center">
+                <Text className="text-[#5E6282] pt-[84px] mb-[79px]">All rights reserved @jadoo.co</Text>
             </div>
         </div>
     )

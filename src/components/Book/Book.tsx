@@ -4,6 +4,7 @@ import Image from "next/image";
 import gambar1 from "@/assets/Book/gambar1.svg";
 import gambar2 from "@/assets/Book/gambar2.svg";
 import gambar3 from "@/assets/Book/gambar3.svg";
+import Heart from "@/assets/Book/heart.png";
 import Building from "@/assets/Book/building.png";
 import Leaf from "@/assets/Book/leaf.png";
 import Map from "@/assets/Book/map.png";
@@ -77,15 +78,18 @@ export default function Book() {
           <Text className="text-[14px] text-[#5E6282] mb-2">
             14-29 June | by Robbin Joseph
           </Text>
-          <div className="flex items-center mb-5">
+          <div className="flex items-center mb-[70px]">
             <Image src={Send} alt="Send Icon" className="w-[24px] h-[24px] mr-2" />
             <Image src={Leaf} alt="Leaf Icon" className="w-[24px] h-[24px] mr-2" />
             <Image src={Map} alt="Map Icon" className="w-[24px] h-[24px] mr-2" />
           </div>
-          <Text className="text-[14px] text-[#5E6282]">
-            <Image src={Building} alt="People Icon" className="inline w-[16px] h-[16px] mr-2" />
-            24 people going
-          </Text>
+          <div className="flex justify-between items-center">
+            <Text className="text-[14px] text-[#5E6282]">
+              <Image src={Building} alt="People Icon" className="inline w-[16px] h-[16px] mr-2" />
+              24 people going
+            </Text>
+            <Image src={Heart} alt="Heart Icon" className="inline w-[24px] h-[24px]" />
+          </div>
         </div>
         <div className="absolute top-[210px] right-[-125px] w-[263px] h-auto bg-white shadow-lg rounded-[10px] p-4 flex flex-col items-start">
           <div className="flex items-center mb-2">
