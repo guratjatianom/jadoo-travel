@@ -91,19 +91,20 @@ export default function Book() {
             <Image src={Heart} alt="Heart Icon" className="inline w-[24px] h-[24px]" />
           </div>
         </div>
-        <div className="absolute top-[210px] right-[-50px] lg:right-[-125px] w-full lg:w-[263px] h-auto bg-white shadow-lg rounded-[10px] p-4 flex flex-col items-start">
+        <div className="absolute top-[400px] lg:top-[210px] lg:right-[-125px] w-[90%] lg:w-[263px] h-auto bg-white shadow-lg rounded-[10px] p-4 flex flex-col items-start">
           <div className="flex items-center mb-2">
-            <Image src={Masjid} alt="Rome Icon" className="w-[50px] h-[50px] mr-3" />
+            <Image src={Masjid} alt="Rome Icon" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] mr-3" />
             <div>
-              <Text className="text-[14px] text-[#5E6282]">Ongoing</Text>
-              <Text className="text-[18px] font-bold text-[#14183E]">Trip to Rome</Text>
+              <Text className="text-[12px] lg:text-[14px] text-[#5E6282]">Ongoing</Text>
+              <Text className="text-[16px] lg:text-[18px] font-bold text-[#14183E]">Trip to Rome</Text>
             </div>
           </div>
-          <Text className="text-[14px] text-[#5E6282] ml-[60px] mb-2">40% completed</Text>
-          <div className="w-full lg:w-[156px] bg-[#D8D8D8] rounded-full ml-[60px] h-[6px]">
+          <Text className="text-[12px] lg:text-[14px] text-[#5E6282] ml-[50px] lg:ml-[60px] mb-2">40% completed</Text>
+          <div className="w-[190px] lg:w-[156px] bg-[#D8D8D8] rounded-full ml-[50px] lg:ml-[60px] h-[6px]">
             <div className="bg-[#5E6282] h-[6px] rounded-full" style={{ width: '40%' }} />
           </div>
         </div>
+
       </div>
     </div>
   );

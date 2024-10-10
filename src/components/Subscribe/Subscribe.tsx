@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Subscribe() {
   return (
     <div className='relative w-full md:w-[1100px] h-[350px] md:h-[490px] mt-[50px] md:mt-[90px] mb-[50px] md:mb-[96px] flex items-center justify-center'>
-      <div className='absolute top-[-15px] right-[-15px] md:top-[-25px] md:right-[-25px] z-10'>
+      <div className='absolute top-[-15px] right-[-0px] md:top-[-25px] md:right-[-25px] z-10'>
         <Image src={Send} alt="send" className="w-[60px] h-[60px] md:w-auto md:h-auto" />
       </div>
       <Image src={Bg} alt="bg" className='absolute inset-0 w-full h-full object-cover z-0' />
@@ -38,7 +38,7 @@ export default function Subscribe() {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-[-25px] right-[-35px] md:bottom-[-50px] md:right-[-85px] z-10">
+      <div className="absolute bottom-[-15px] right-[-0px] md:bottom-[-50px] md:right-[-85px] z-10">
         <Image src={Bintang} alt="bintang-icon" className="w-[80px] h-[80px] md:w-[150px] md:h-[150px]" />
       </div>
     </div>

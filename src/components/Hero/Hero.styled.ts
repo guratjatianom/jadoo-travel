@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
+// Animation for the plane movement
 export const movePlane = keyframes`
   0% {
     transform: translate(0, 0);
@@ -9,11 +10,18 @@ export const movePlane = keyframes`
   }
 `;
 
+// Styled component to apply the plane animation
 export const PlaneAnimation = styled.div`
   animation: ${movePlane} 3s ease-in-out forwards;
   animation-fill-mode: forwards;
+
+  @media (max-width: 768px) {
+    animation: ${movePlane} 2s ease-in-out forwards;
+    transform: translate(50px, -50px);
+  }
 `;
 
+// Animation for the traveller sliding up
 export const slideUp = keyframes`
   0% {
     transform: translateY(100px);
@@ -25,6 +33,12 @@ export const slideUp = keyframes`
   }
 `;
 
+// Styled component to apply the traveller slide up animation
 export const TravellerAnimation = styled.div`
   animation: ${slideUp} 2s ease-in-out forwards;
+
+  @media (max-width: 768px) {
+    animation: ${slideUp} 1.5s ease-in-out forwards;
+    transform: translateY(50px);
+  }
 `;
