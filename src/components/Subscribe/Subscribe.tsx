@@ -38,7 +38,7 @@ export default function Subscribe() {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-[-15px] right-[-0px] md:bottom-[-50px] md:right-[-85px] z-10">
+      <div className="absolute bottom-[-15px] right-[-5px] md:bottom-[-50px] md:right-[-85px] z-10">
         <Image src={Bintang} alt="bintang-icon" className="w-[80px] h-[80px] md:w-[150px] md:h-[150px]" />
       </div>
     </div>

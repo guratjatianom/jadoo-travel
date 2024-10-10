@@ -8,7 +8,7 @@ import Qantas from "@/assets/Logos/qantas.jpg";
 
 export default function Logos() {
     return (
-        <div className='w-full md:w-[1073px] h-auto mt-[300px] md:mt-[96px]'>
+        <div className='w-full md:w-[1073px] h-auto mt-[100px] md:mt-[96px]'>
             <div className="flex flex-wrap gap-[20px] md:gap-[50px] items-center justify-center">
                 <div className="hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl">
                     <Image src={Axon} alt="axon" width={100} height={60} className="md:w-[140px] md:h-[50px]" />

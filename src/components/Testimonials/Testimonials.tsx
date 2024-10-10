@@ -54,7 +54,7 @@ export default function Testimonials() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row md:flex-col justify-center gap-[15px] md:gap-[30px] mt-[20px]">
+            <div className="flex flex-row md:flex-col justify-center gap-[20px] md:gap-[30px] mt-[220px] md:mt-[40px]">
                 <button onClick={() => setIsMikeActive(true)} className="transform rotate-0">
                     <Image src={Up} alt="up" className="w-4 h-4 md:w-auto md:h-auto" />
                 </button>
